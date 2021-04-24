@@ -90,7 +90,7 @@ header nav ul li {
 }
 
 .hero {
-  background-image: url(../images/mtwhitney.jpeg);
+  /* background-image: url(../images/mtwhitney.jpeg); */
   background-size: cover;
   display: flex;
   justify-content: space-evenly;
@@ -131,6 +131,7 @@ header nav ul li {
   border-right: 2px solid var(--quarternary-color);
   height: 100px;
   align-items: center;
+  justify-content: center;
   font-size: 25px;
   text-shadow: 2px 2px var(--secondary-color);
 }
@@ -249,16 +250,19 @@ header nav ul li {
     right: 30px;
   }
 
-  .cool-subtitle {
+  .words {
     position: absolute;
-    bottom: 70px;
+    top: 65%;
   }
 
   .title {
-    flex: 1 100%;
-    justify-content: center;
+    /* flex: 1 100%; */
     border-right: none;
     border-bottom: 2px solid var(--quarternary-color);
+  }
+  .ben-pic img{
+    position: absolute;
+    top: 5%;
   }
 
   #contact-me ul {

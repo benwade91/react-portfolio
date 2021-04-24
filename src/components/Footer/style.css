@@ -1,0 +1,64 @@
+:root {
+    --dk-blue-color: #1E83AE;
+    --blue-color: #125688;
+    --light-blue-color: #6cc644;
+    --green-color: #6dcd9a;
+  }
+
+footer {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+    height: 70px;
+    background-color: #999;
+    margin-bottom: 0;
+}
+
+.copyright {
+    width: 70%;
+    float: left;
+}
+
+.copyright p {
+    padding-left: 10%;
+    color: white;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.social {
+    width: 30%;
+    float: right;
+}
+
+.social a {
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.linked {
+    background-color: var(--dk-blue-color);
+    width: 30%;
+}
+
+.face {
+    background-color: var(--blue-color);
+    width: 30%;
+}
+
+.tweet {
+    background-color: var(--light-blue-color);
+    width: 30%;
+}
+
+.support {
+    background-color: var(--green-color);
+    font-size: 0.8em;
+    width: 40%;
+}

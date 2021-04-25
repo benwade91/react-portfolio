@@ -1,0 +1,56 @@
+import React from 'react';
+import './style.css'
+
+const Header = (props) => {
+    const {
+        categories = [],
+        setCurrentCategory,
+        // currentCategory
+    } = props;
+
+    return (
+        <header>
+            <h1> Ben Wade</h1>
+            <nav className='lg-nav'>
+                <ul>
+                    <p className="menu-btn">Menu</p>
+                    {categories.map((category) => {
+                        return <li className="menu-item" key={category.name}>
+                            <span style={{ cursor: 'pointer' }} className="menu-item"
+                                onClick={() => {
+                                    setCurrentCategory(category);
+                                }}
+                            >{category.name}</span>
+                        </li>
+                    })}
+                    {/* <li>
+                    <a className="menu-item" href="#work">Projects</a>
+                </li>
+                <li>
+                    <a className="menu-item" href="#contact-me">Contact Me</a>
+                </li> */}
+                </ul>
+            </nav>
+            <nav className='sm-nav'>
+                <div className="navbar">
+                    <div className="dropdown">
+                        <button className="dropbtn">Dropdown
+      <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            {categories.map((category) => {
+                                return <span key={category.name} style={{ cursor: 'pointer' }} className="menu-item"
+                                    onClick={() => {
+                                        setCurrentCategory(category);
+                                    }}
+                                >{category.name}<br /></span>
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    )
+}
+
+export default Header;

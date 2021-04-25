@@ -91,11 +91,14 @@ header nav ul li {
 
 .hero {
   /* background-image: url(../images/mtwhitney.jpeg); */
-  background-size: cover;
-  display: flex;
+  /* background-size: cover; */
+  /* display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   height: 400px;
+  width: 80%; */
+  min-height: 350px;
   position: relative;
 }
 
@@ -123,6 +126,8 @@ header nav ul li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  min-height: 100%;
+  position: relative;
 }
 
 .title {
@@ -204,31 +209,16 @@ header nav ul li {
 }
 
 @media screen and (max-width: 768px) {
-  .theGrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  header h1 {
-    font-size: 30px;
-  }
 
   .menu-btn {
     display: block;
     cursor: pointer;
   }
 
-  .menu-item {
-    display: none;
-    position: relative;
-  }
-
   nav {
     position: relative;
     display: inline-block;
-    width: 50%;
+    /* width: 50%; */
   }
 
   nav li {
@@ -249,20 +239,41 @@ header nav ul li {
     display: block;
     right: 30px;
   }
+  .title {
+    flex: 1 100%;
+    border-right: none;
+    border-bottom: 2px solid var(--quarternary-color);
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  .theGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 
   .words {
-    position: absolute;
-    top: 65%;
+    /* position: absolute;
+    top: 65%; */
+    flex: 1 100%;
   }
 
   .title {
-    /* flex: 1 100%; */
+    flex: 1 100%;
     border-right: none;
     border-bottom: 2px solid var(--quarternary-color);
+    height: 300px;
   }
-  .ben-pic img{
-    position: absolute;
-    top: 5%;
+
+  .ben-pic img {
+    /* position: absolute;
+    top: 5%; */
   }
 
   #contact-me ul {

@@ -20,7 +20,7 @@ let App = () => {
     const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
     const Category = ({section}) => {
-        console.log(section)
+        
     switch (section.name) {
         case 'projects': return <Project />;
         case 'contact': return <Contact />;

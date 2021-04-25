@@ -1,0 +1,13 @@
+textarea {
+	width: 200px;
+	height: 120px;
+	padding: 5px;
+}
+
+.words {
+    justify-content: center;
+}
+
+#contact-form div {
+    padding: 10px;
+}

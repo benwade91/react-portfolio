@@ -9,8 +9,7 @@ let Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
-            setFormState({ [e.target.name]: e.target.value });
-            console.log('Form', formState);
+            window.location.href = `mailto:benwade91@gmail.com?subject=New Contact from ${formState.name}&body=${formState.message}`
         }
     };
 
@@ -29,6 +28,9 @@ let Contact = () => {
                 setErrorMessage('');
             }
         }
+        if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
     };
 
     function validateEmail(email) {
@@ -60,7 +62,7 @@ let Contact = () => {
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )}
-                    <button data-testid="button" type="submit">Submit</button>
+                    <button className='submitBtn' data-testid="button" type="submit">Submit</button>
                 </form>
             </div>
         </section>

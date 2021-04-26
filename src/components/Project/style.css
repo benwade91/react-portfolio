@@ -53,6 +53,7 @@
     color: white;
     transform: rotateY(180deg);
     padding: 30px 20px;
+    overflow: scroll;
   }
   .flip-card-back div {
       padding: 10px;

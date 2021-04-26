@@ -71,3 +71,9 @@
       height: 150px;
     }
   }
+
+  @media screen and (max-height: 500px){
+    .flip-card {
+      height: 70vh;
+    }
+  }

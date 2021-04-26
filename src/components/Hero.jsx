@@ -9,7 +9,7 @@ const Hero = () => {
                     <img className="" src={selfie} alt="A beautiful persons face." />
                 </div>
                 <div className="words">
-                    <p>I'm currently working as a garbage man, in San Francisco CA, with the goal to pivot careers into a web-development role. I'm proficient with HTML5, CSS3, JavaScript, jQuery, Node.js, MySQL, and learning more every day. </p>
+                    <p>Based in the San Francisco Bay Area, I'm a full stack web developer with a passion for front end development. Proficient with HTML, CSS, JavaScript, NodeJS, Jquery, Express, ReactJS, Git, GitHub SQL, NoSQL, MySQL, Mongoose, MongoDB, Bootstrap, HandlebarsJS, Webpack and more...</p>
                 </div>
             </div>
         </div>)

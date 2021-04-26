@@ -38,7 +38,7 @@ header h1 {
   display: none;
 }
 
-header a {
+header span {
   text-decoration: none;
   color: var(--quarternary-color);
   transition: 2s;
@@ -49,7 +49,7 @@ header li {
   position: relative;
 }
 
-header a::before {
+header span::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -62,15 +62,15 @@ header a::before {
   z-index: -1;
 }
 
-header a:hover::before {
+header span:hover::before {
   opacity: 1;
   transform: rotate(900deg);
   border-radius: 20%;
-
 }
 
-header a:hover {
+header span:hover {
   color: var(--primary-color);
+  font-weight: 700;
 }
 
 header nav {

@@ -23,12 +23,6 @@ const Header = (props) => {
                             >{category.name}</span>
                         </li>
                     })}
-                    {/* <li>
-                    <a className="menu-item" href="#work">Projects</a>
-                </li>
-                <li>
-                    <a className="menu-item" href="#contact-me">Contact Me</a>
-                </li> */}
                 </ul>
             </nav>
             <nav className='sm-nav'>

@@ -34,7 +34,8 @@ const projects = [
         name: 'Note Taker',
         description: 'The app is meant to help the user create and manage notes. It stored all the information on a server app so the notes can be accesed from anywhere.',
         photoSrc: noteTaker,
-        repo: 'https://github.com/benwade91/my-note'
+        repo: 'https://github.com/benwade91/my-note',
+        url: 'https://my-notes-1025.herokuapp.com/notes'
     },
     {
         name: 'Weather Dash',

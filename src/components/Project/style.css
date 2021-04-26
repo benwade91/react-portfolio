@@ -58,3 +58,13 @@
   .flip-card-back div {
       padding: 10px;
   }
+
+  @media screen and (max-width: 768px){
+
+    .flip-card {
+      background-color: transparent;
+      height: 35vh;
+      perspective: 1000px;
+    }
+
+  }

@@ -13,14 +13,16 @@ const projects = [
         description: 'SimpleSuds connects customers to local laundromats that will pick up and return laundry clean, ironed, and folded. Customer can create accounts and place orders and Laudromat as admin can update the order.',
         photoSrc: simpleSuds,
         url: 'https://simple-suds.herokuapp.com/',
-        repo: 'https://github.com/bhumisha/laundromat'
+        repo: 'https://github.com/bhumisha/laundromat',
+        role: 'This was a group project using MVC. My role was the frontend development. I used Handlebars.JS to template the HTML and combined it with Bootstrap and vanilla CSS.'
     },
     {
         name: 'iCycle',
         description: 'With iCycle, a user can search for a city or zip code and find out how many bicycle-related thefts, accidents, and potential road hazards have been reported within a 10-mile radius of that searched area.',
         photoSrc: iCycle,
         url: 'https://ohwhytina.github.io/iCycle/',
-        repo: 'https://github.com/ohwhytina/iCycle'
+        repo: 'https://github.com/ohwhytina/iCycle',
+        role: 'This was a group project where my role was to build the API functionality. I combined the GoogleMaps API with geographic locations of "incidents" from the Bikewise API.'
     },
     {
         name: 'Employee Manager',
@@ -71,6 +73,7 @@ const Project = () => {
                                 <div>
                                     <a href={project.repo}>Github Repo</a>
                                 </div>
+                                {project.role&&<p>{project.role}</p>}
                             </div>
                         </div>
                     </div>

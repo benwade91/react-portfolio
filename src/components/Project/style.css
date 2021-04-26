@@ -67,4 +67,7 @@
       perspective: 1000px;
     }
 
+    .projects .title {
+      height: 150px;
+    }
   }

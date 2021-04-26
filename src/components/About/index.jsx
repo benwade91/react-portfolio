@@ -1,5 +1,5 @@
 import React from 'react';
-import selfie from '../images/IMG_1394.jpeg';
+import selfie from '../../images/IMG_1394.jpeg';
 
 const Hero = () => {
     return (

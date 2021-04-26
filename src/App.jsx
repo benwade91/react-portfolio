@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-// import About from './components/About';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
@@ -25,7 +24,7 @@ let App = () => {
         case 'projects': return <Project />;
         case 'contact': return <Contact />;
         case 'resume': return <Resume />;
-        default: return <Hero />;
+        default: return <About />;
     }}
     
     return (

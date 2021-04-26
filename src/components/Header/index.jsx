@@ -4,8 +4,7 @@ import './style.css'
 const Header = (props) => {
     const {
         categories = [],
-        setCurrentCategory,
-        // currentCategory
+        setCurrentCategory
     } = props;
 
     return (

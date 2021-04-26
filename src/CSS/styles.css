@@ -38,18 +38,18 @@ header h1 {
   display: none;
 }
 
-header span {
+.lg-nav span {
   text-decoration: none;
   color: var(--quarternary-color);
   transition: 2s;
   z-index: 2;
 }
 
-header li {
+.lg-nav li {
   position: relative;
 }
 
-header span::before {
+.lg-nav span::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -62,22 +62,22 @@ header span::before {
   z-index: -1;
 }
 
-header span:hover::before {
+.lg-nav span:hover::before {
   opacity: 1;
   transform: rotate(900deg);
   border-radius: 20%;
 }
 
-header span:hover {
+.lg-nav span:hover {
   color: var(--primary-color);
   font-weight: 700;
 }
 
-header nav {
+.lg-nav {
   margin: 15px;
 }
 
-header nav ul {
+.lg-nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -85,7 +85,7 @@ header nav ul {
   align-items: center;
 }
 
-header nav ul li {
+.lg-nav ul li {
   margin: 0 20px;
 }
 
@@ -126,11 +126,13 @@ header nav ul li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  min-height: 100%;
+  min-height: 80vh;
   position: relative;
 }
+
 .hero .content {
-  margin: 10% auto;
+  margin: auto;
+  /* min-height: 70vh; */
 }
 
 .title {
@@ -242,6 +244,7 @@ header nav ul li {
     display: block;
     right: 30px;
   }
+
   .title {
     flex: 1 100%;
     border-right: none;

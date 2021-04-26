@@ -121,13 +121,16 @@ header nav ul li {
 }
 
 .content {
-  margin: 50px auto;
+  margin: 0 auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   min-height: 100%;
   position: relative;
+}
+.hero .content {
+  margin: 10% auto;
 }
 
 .title {
@@ -150,7 +153,7 @@ header nav ul li {
 
 .theGrid {
   flex: 2 70%;
-  padding: 30px;
+  padding: 10px 30px;
   align-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
